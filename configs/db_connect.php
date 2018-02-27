@@ -13,10 +13,10 @@ define('DBUSER', 'omnomnom');
 define('DBPASS', 'waffleshapedfrenchfries!');
 define('DBNAME', 'testblog');
 
-$db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 //time
-date_default_timezone_set('Europe/London');
+date_default_timezone_set('America/New_York');
 
 ?>
